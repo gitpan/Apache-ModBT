@@ -21,17 +21,21 @@ Apache::ModBT::LeechNuker - mod_perl handler to shun leeches on a mod_bt BitTorr
 
 =head1 DESCRIPTION
 
-  The Apache::ModBT::LeechNuker module is a basic example on how to manipulate the operations of
-  a mod_bt BitTorrent tracker from mod_perl.
-  
-  When run on an "/announce" request, this module will look up the peer making the request in
-  the tracker's database. If the peer has not uploaded anything, and has been connected to
-  the tracker for a certain amount of time (the default is 3600 seconds or 1 hour), has been
-  downloading, and there are other peers that need his or her help, the peer's "Shunned"
-  flag is set in the database.
-  
-  A "Shunned" peer is never given any other peers when it makes /announce requests, and is
-  never served to other peers, effectively blocking the peer from the network 
+The Apache::ModBT::LeechNuker module is a basic example on how to manipulate the operations of
+a mod_bt BitTorrent tracker from mod_perl.
+
+When run on an "/announce" request, this module will look up the peer making the request in
+the tracker's database. If the peer has not uploaded anything, and has been connected to
+the tracker for a certain amount of time (the default is 3600 seconds or 1 hour), has been
+downloading, and there are other peers that need his or her help, the peer's "Shunned"
+flag is set in the database.
+
+A "Shunned" peer is never given any other peers when it makes /announce requests, and is
+never served to other peers, effectively blocking the peer from the network 
+
+=head1 SEE ALSO
+
+L<Apache::ModBT>, L<Net::BitTorrent::LibBTT>, L<http://www.crackerjack.net/mod_bt/>, L<http://perl.apache.org/>
 
 =cut
 

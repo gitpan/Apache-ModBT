@@ -26,7 +26,7 @@ our @EXPORT = qw(
 	
 );
 
-our $VERSION = '0.0.8';
+our $VERSION = '0.010';
 
 require XSLoader;
 XSLoader::load('Apache::ModBT', $VERSION);
@@ -65,11 +65,11 @@ this method instead of calling Net::BitTorrent::LibBTT->new().
 
 =head1 SEE ALSO
 
-Net::BitTorrent::LibBTT
+L<Net::BitTorrent::LibBTT>, L<http://www.crackerjack.net/mod_bt/>, L<http://perl.apache.org/>
 
 =head1 AUTHOR
 
-Tyler 'Crackerjack' MacDonald, E<lt>tyler@yi.orgE<gt>
+Tyler 'Crackerjack' MacDonald, <tyler@yi.org>
 
 =head1 COPYRIGHT AND LICENSE
 
@@ -78,6 +78,5 @@ Copyright (C) 2004 by Tyler 'Crackerjack' MacDonald
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself, either Perl version 5.8.4 or,
 at your option, any later version of Perl 5 you may have available.
-
 
 =cut
